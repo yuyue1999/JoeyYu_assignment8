@@ -1,0 +1,6 @@
+polars
+matplotlib
+FPDF
+pytest
+black
+ruff
