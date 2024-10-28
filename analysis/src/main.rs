@@ -1,9 +1,9 @@
 use csv::ReaderBuilder;
-use serde::Deserialize;
+
 use std::collections::HashMap;
 use std::env;
 use std::fs::File;
-use std::path::PathBuf;
+
 
 fn read_dataset(path: &str) -> Vec<HashMap<String, String>> {
     // Get the directory of the current executable
@@ -92,6 +92,6 @@ fn statistics(records: &[HashMap<String, String>]) {
 
 fn main() {
     let dataset_path = "../../../ai_job_market_insights.csv";
-    let records = read_dataset(dataset_path.as_ref());
+    let records = read_dataset(dataset_path);
     statistics(&records);
 }
