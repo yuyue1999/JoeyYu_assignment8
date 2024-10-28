@@ -18,13 +18,11 @@ run:
 	python src/main.py
 
 rust_format:
-	cargo fmt
+	cargo fmt --manifest-path analysis/Cargo.toml
 
 rust_lint:
 	cargo clippy -- -D warnings
 
-rust_test:
-	cargo test
 
 rust_run:
 	cargo run --manifest-path analysis/Cargo.toml
