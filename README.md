@@ -24,20 +24,3 @@ In [`src/main.py`](src/main.py), This code reads a dataset on the AI job market,
 #### Descriptive Statistics
 ![img.png](img.png)
 
-
-#### points histogram
-
-![companysize_histogram.png](companysize_histogram.png)
-
-#### assists histogram
-
-![jobgrowth_histogram.png](jobgrowth_histogram.png)
-
-#### blocks histogram
-
-![requiredskill_histogram.png](requiredskill_histogram.png)
-
-### Extra Credit
-
-Extra Credit (CI/CD PDF or MD generation), 5 points
-the PDF would be generated automatically

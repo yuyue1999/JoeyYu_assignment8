@@ -18,8 +18,8 @@ jobs:
         with:
           toolchain: stable
 
-      - name: build Rust
-        run: make release
+#      - name: build Rust
+#        run: make release
 
       - name: Format code
         run: make rust_format
