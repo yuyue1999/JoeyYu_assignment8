@@ -18,14 +18,14 @@ run:
 	python src/main.py
 
 rust_format:
-	cargo fmt --manifest-path analysis/Cargo.toml
+	cargo fmt --manifest-path ./analysis/Cargo.toml
 
 rust_lint:
-	cargo clippy -- -D warnings
+	cargo clippy --manifest-path ./analysis/Cargo.toml -- -D warnings
 
 
 rust_run:
-	cargo run --manifest-path analysis/Cargo.toml
+	cargo run --manifest-path ./analysis/Cargo.toml
 
 clean:
 	rm -rf $(VENV)
